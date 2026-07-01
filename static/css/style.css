@@ -1,0 +1,157 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f4f8f9; /* Light soft blue/grey background */
+            color: #333;
+        }
+
+        /* Top Navigation Bar */
+        .top-header {
+            background-color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00a685; /* Teal brand color */
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-container {
+            flex-grow: 0.5;
+            display: flex;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #00a685;
+            color: white;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 20px;
+        }
+
+        .action-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        /* Secondary Navigation */
+        .nav-menu {
+            background-color: white;
+            padding: 10px 5%;
+            display: flex;
+            gap: 25px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .nav-menu a.active {
+            color: #00a685;
+            background-color: #e5f6f3;
+            padding: 5px 15px;
+            border-radius: 15px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 5%;
+            background: linear-gradient(135deg, #e5f6f3 0%, #ffffff 100%);
+            min-height: 400px;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            color: #1a4d5c; /* Dark navy/teal */
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-primary {
+            background-color: #00a685;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #1a4d5c;
+            padding: 12px 25px;
+            border: 1px solid #1a4d5c;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Placeholder for the 3D Graphic */
+        .hero-graphic {
+            width: 400px;
+            height: 400px;
+            background-color: #d1ece5;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #00a685;
+            font-weight: bold;
+            border: 2px dashed #00a685;
+        }

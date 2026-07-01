@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Pharmacy Management{% endblock %}</title>
+
+   {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <header class="top-header">
+        <div class="logo">
+            <span style="font-size: 28px;">+</span> PharmCare
+        </div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search medicines, health products...">
+            <button>Search</button>
+        </div>
+
+        <div class="header-actions">
+            <div class="action-item">
+                <span>📦</span> Track Order
+            </div>
+            <div class="action-item">
+                <span>👤</span> Sign In
+            </div>
+            <div class="action-item">
+                <span>🛒</span> Cart
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-menu">
+        <a href="#" class="active">🏠 Home</a>
+        <a href="#">Medicines</a>
+        <a href="#">Health Products</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Lab Tests</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Good Health<br>Delivered Fast</h1>
+            <p>Genuine medicines, trusted brands & expert care at your doorstep.</p>
+            
+            <div class="btn-group">
+                <button class="btn-primary">Shop Medicines →</button>
+                <button class="btn-secondary">Upload Prescription ⬆️</button>
+            </div>
+        </div>
+
+        <div class="hero-graphic">
+            <p>Your 3D Graphic / Product Image Goes Here</p>
+        </div>
+    </section>
+
+</body>
+</html>
