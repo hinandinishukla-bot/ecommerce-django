@@ -18,9 +18,14 @@
         <h2>Login</h2>
 
         <p>Welcome to PharmCare Platform</p>
+        
 
-        <form method="POST">
-
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: red;">{{ message }}</p>
+            {% endendfor %}
+        {% endif %}
+        <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
 
             <div class="input-box">
